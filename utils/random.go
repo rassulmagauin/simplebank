@@ -31,6 +31,12 @@ func RandomOwner() string {
 func RandomBalance() int64 {
 	return RandomInt(0, 1000)
 }
+func RandomBalanceEntry() int64 {
+	return RandomInt(-1000, 1000)
+}
+func RandomBalanceTransfer() int64 {
+	return RandomInt(0, 500)
+}
 func RandomCurrency() string {
 	curr := []string{"USD", "EUR", "KZT", "CAD"}
 	return curr[rand.Intn(len(curr))]
