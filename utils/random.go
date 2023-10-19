@@ -38,6 +38,6 @@ func RandomBalanceTransfer() int64 {
 	return RandomInt(0, 500)
 }
 func RandomCurrency() string {
-	curr := []string{"USD", "EUR", "KZT", "CAD"}
+	curr := []string{"USD", "EUR", "CAD"}
 	return curr[rand.Intn(len(curr))]
 }
